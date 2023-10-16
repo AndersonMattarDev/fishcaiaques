@@ -1,0 +1,17 @@
+.container{
+    margin: 10px;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 80px;
+    border-color: aqua;
+    box-shadow: 20px 20px 10px rgba(77, 85, 85, 0.644);
+    width: 98%;
+    height: 45rem;
+}
+
+.qsmos{
+    margin-top: 3rem;
+    font-family: poppins;
+    font-size: 20pt;
+    color: rgba(35, 89, 235, 0.89);
+}
+
