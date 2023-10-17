@@ -1,17 +1,22 @@
 .container{
+    background-color: rgba(36, 154, 76, 0.900);
     margin: 10px;
-    border-bottom-right-radius: 90px;
-    border-top-left-radius: 80px;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: 80px;
     border-color: aqua;
     box-shadow: 20px 20px 10px rgba(77, 85, 85, 0.644);
     width: 98%;
-    height: 45rem;
+    height: 45rem;   
 }
 
 .qsmos{
     margin-top: 3rem;
-    font-family: poppins;
-    font-size: 20pt;
-    color: rgba(35, 89, 235, 0.89);
+    margin-left: 2rem;
+    width: 13rem;
+    word-wrap: break-word;   
+    margin-top: 3rem;
+    font-family: Sriracha;
+    font-size: 18pt;
+    color: rgb(153, 72, 18);
 }
 
