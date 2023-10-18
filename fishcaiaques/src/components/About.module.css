@@ -1,22 +1,90 @@
-.container{
-    background-color: rgba(36, 154, 76, 0.900);
-    margin: 10px;
-    border-bottom-left-radius: 90px;
-    border-top-right-radius: 80px;
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas igualmente espaçadas */
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 80px;
     border-color: aqua;
     box-shadow: 20px 20px 10px rgba(77, 85, 85, 0.644);
-    width: 98%;
-    height: 45rem;   
-}
+    gap: 20px; /* Espaçamento entre as células do grid */
+    margin: 10rem;
+    width: 70rem;
+    height: 45rem;
+    }
+    
 
-.qsmos{
-    margin-top: 3rem;
-    margin-left: 2rem;
-    width: 13rem;
-    word-wrap: break-word;   
-    margin-top: 3rem;
+    /* Estilize as divs normais */
+.wrapper > div {
+    display: flex;
+    font-size: 35pt;
+    font-family: Caveat;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: rgb(3, 156, 224);
+    transition: background-color 5s;
+    cursor: pointer;    
+    position: relative;
+    min-height: 100px; /* Defina uma altura mínima para as divs */
+    transition: transform 0.5s; /* Adicione para posicionar o texto adicional */
+  }
+
+/* Estilize as divs quando estão sendo "hovered" */
+.wrapper > div:hover {
+    background-color: #0a722c; /* Altere a cor de fundo para a cor desejada */
     font-family: Sriracha;
-    font-size: 18pt;
-    color: rgb(153, 72, 18);
-}
+    font-size: 15pt;
+       
+  }
+  
+  /* Estilize o texto adicional nas divs quando estão sendo "hovered" */
+  .wrapper > div:hover > .hoverText {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  
+  /* Estilize o texto adicional (inicialmente escondido) */
+  .wrapper > div > .hoverText {
+    position: absolute;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: rgba(36, 37, 36, 0.9); /* Cor de fundo do texto adicional */
+    color: #eeeeee; /* Cor do texto */
+    display: flex;
+    flex-direction: column; /* Altera o fluxo para uma coluna */
+    align-items: flex-start; /* Alinha à esquerda em relação à coluna */
+    justify-content: flex-start; /* Alinha ao topo em relação à coluna */
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.9s, transform 0.9s;
+    
+  }
+
+  .wrapper > div > .hoverText h1 {
+    font-size: 19pt;
+  }
+
+  .wrapper > div > .hoverText h2 {
+    font-size: 15pt;
+  }
+
+  .wrapper > div > .hoverText p {
+    font-size: 14pt;
+  }
+
+
+
+
+     
+   
+   
+
+
+
 
