@@ -64,7 +64,7 @@ export function About(){
                     <p>* Inclusão e Diversidade</p>
                     <p>* Aventura Responsável</p>
                     <p>* Comunidade e Educação</p>
-                    <p>* respeito ao próximo</p>
+                    <p>* Respeito ao próximo</p>
                    
                     <h2>Esses princípios norteiam nossa missão de proporcionar experiências aquáticas excepcionais e sustentáveis.</h2>                           
                     
