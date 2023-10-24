@@ -1,5 +1,5 @@
 
-import imagem from '../assets/logo.png'
+import imagem from '../assets/logoatual.png'
 import styles from './Hero.module.css'
 
 export function Hero(){

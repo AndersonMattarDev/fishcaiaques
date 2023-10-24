@@ -1,0 +1,45 @@
+.container{
+    display: grid;
+    grid-template-rows: auto 1fr; /* Duas linhas: uma para a div e uma para as sections */
+    grid-template-columns: repeat(3, 1fr);/* Três colunas para as sections */
+    gap: 20px;/* Espaçamento entre as sections */
+    justify-content: center;
+    justify-items: center;/* Centraliza horizontalmente */
+    align-items: start;/* Alinha a div no topo */
+    min-height: 8rem;
+    background-color: #252839;
+    border-radius: 25px;
+}
+
+.container h1 {
+    position: relative;
+    font-size: 8vh;
+    grid-row: 1; /* A div ocupa a primeira linha */
+    grid-column: 1 / -1; /* A div ocupa todas as colunas */
+    text-align: center; /* Centraliza o texto dentro da div */
+    color: #252839;
+    -webkit-text-stroke: 0.3vh #383d52;
+}
+
+.container h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: crimson;
+    -webkit-text-stroke: 0vh #383d52;
+    border-right: 2px solid crimson;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        width: 0;
+    }
+    70%{
+        width: 100%;
+    }
+}
