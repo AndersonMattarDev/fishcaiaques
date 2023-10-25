@@ -1,24 +1,43 @@
-.container{
+.container {
     display: grid;
-    grid-template-rows: auto 1fr; /* Duas linhas: uma para a div e uma para as sections */
-    grid-template-columns: repeat(3, 1fr);/* Três colunas para as sections */
-    gap: 20px;/* Espaçamento entre as sections */
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 10px;
     justify-content: center;
-    justify-items: center;/* Centraliza horizontalmente */
-    align-items: start;/* Alinha a div no topo */
+    justify-items: center;
+    align-items: start;
     min-height: 8rem;
-    background-color: #252839;
+    background-color: #4cb2f7cb;
     border-radius: 25px;
-}
+    padding: 2rem;
+  }
+  
+  .cardsContainer {
+    display: flex; /* Alterado para flex para dispor os cards um ao lado do outro */
+    justify-content: space-between; /* Coloca espaço entre os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+  }
+  
+  .card {
+    width: 28rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
 
 .container h1 {
     position: relative;
+    font-family: Caveat;
     font-size: 8vh;
     grid-row: 1; /* A div ocupa a primeira linha */
     grid-column: 1 / -1; /* A div ocupa todas as colunas */
     text-align: center; /* Centraliza o texto dentro da div */
-    color: #252839;
-    -webkit-text-stroke: 0.3vh #383d52;
+    color: #4cb2f7cb;
+    -webkit-text-stroke: 0.3vh #4cb2f7cb;
 }
 
 .container h1::before{
@@ -29,7 +48,7 @@
     width: 0%;
     height: 100%;
     color: crimson;
-    -webkit-text-stroke: 0vh #383d52;
+    -webkit-text-stroke: 0vh #4cb2f7cb;
     border-right: 2px solid crimson;
     overflow: hidden;
     animation: animate 6s linear infinite;
@@ -43,3 +62,33 @@
         width: 100%;
     }
 }
+
+.card img {
+    width: 100%; /* ou ajuste para a largura desejada */
+    height: auto; /* Isso mantém a proporção da imagem */
+    object-fit: cover; /* Isso preservará a proporção e preencherá o espaço do card */
+  }
+  
+  .card:hover .textOverlay {
+    transform: translateY(0);
+  }
+  
+  .textOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  
+  .textOverlay p {
+    color: #fff;
+    font-size: 16px;
+  }
+ 
