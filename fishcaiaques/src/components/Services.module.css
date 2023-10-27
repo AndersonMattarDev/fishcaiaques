@@ -22,6 +22,7 @@
   .card {
     width: 28rem;
     height: 28rem;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -37,7 +38,7 @@
     grid-column: 1 / -1; /* A div ocupa todas as colunas */
     text-align: center; /* Centraliza o texto dentro da div */
     color: #4cb2f7cb;
-    -webkit-text-stroke: 0.3vh #4cb2f7cb;
+    -webkit-text-stroke: 0.3vh #5c6164cb;
 }
 
 .container h1::before{
@@ -63,9 +64,10 @@
     }
 }
 
+
 .card img {
     width: 100%; /* ou ajuste para a largura desejada */
-    height: auto; /* Isso mantém a proporção da imagem */
+    height: 100%; /* Isso mantém a proporção da imagem */
     object-fit: cover; /* Isso preservará a proporção e preencherá o espaço do card */
   }
   
@@ -77,10 +79,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 28rem;
+    height: 28rem;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     transform: translateY(100%);
@@ -88,7 +91,27 @@
   }
   
   .textOverlay p {
+    text-align: justify;
+    margin: 10px;
+    text-indent: 25px;    
     color: #fff;
     font-size: 16px;
+  }
+  .textOverlay h3{
+    color: aliceblue;
+    font-family: Poppins;
+   
+  }
+
+  .textOverlay li{
+    color: #fff;
+    font-size: 16px;
+    font-family: Sriracha;
+  }
+
+  .textOverlay strong{
+    font-family: Poppins;
+    color: #fff;
+    font-size: 19px;
   }
  
