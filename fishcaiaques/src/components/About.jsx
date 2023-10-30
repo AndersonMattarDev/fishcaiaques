@@ -1,5 +1,5 @@
 import styles from './About.module.css';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 
 export function About(){
