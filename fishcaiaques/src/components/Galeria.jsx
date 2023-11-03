@@ -14,7 +14,7 @@ import slide10 from '../assets/img-galery10.jpeg';
 import slide11 from '../assets/img-galery11.jpeg';
 import slide12 from '../assets/img-galery12.jpg';
 
-const imageWidth = 250; // Largura de cada imagem
+const imageWidth = 530; // Largura de cada imagem
 const gap = 15; // Espaçamento entre imagens
 
 export function Galeria() {
