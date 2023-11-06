@@ -114,4 +114,22 @@
     color: #fff;
     font-size: 19px;
   }
+
+  .titulo{
+    display: flex;
+    color: rgb(112, 112, 112);
+    font-family: Caveat;
+    font-size: 1.6rem;      
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2; /* Ocupa as duas colunas do grid */
+    background-color: transparent; /* Ou a cor de fundo desejada */
+  }
+
+  .titulo span{
+  margin-right: 10px;
+  font-size: 2rem;
+  color: red;
+  opacity: 0.5;
+  }
  

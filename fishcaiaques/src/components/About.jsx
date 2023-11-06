@@ -1,12 +1,18 @@
 import styles from './About.module.css';
 import { useState } from 'react';
+import { GoAlertFill } from "react-icons/go";
 
 
 export function About(){
     const [hoveredDiv, setHoveredDiv] = useState (null);
 
     return ( 
-        <div className={styles.wrapper}>            
+        <div className={styles.wrapper}>
+            <section className={styles.titulo}>
+            <span><GoAlertFill /></span>
+            <h3>Passe o mouse ou toque em um item para saber mais!</h3> 
+            </section>
+                      
             <div
              className={hoveredDiv === 1 ? styles.hovered : null}
              onMouseEnter={() => setHoveredDiv(1)}

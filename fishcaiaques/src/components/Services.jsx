@@ -1,4 +1,5 @@
 import styles from './Services.module.css';
+import { GoAlertFill } from "react-icons/go";
 import imagemCaiaque from '../assets/caiaque.jpg';
 import trilha47 from '../assets/torre47.jpg'
 import trilhaagua from '../assets/trilha-dagua.jpg'
@@ -8,6 +9,10 @@ import trilhaagua from '../assets/trilha-dagua.jpg'
 export function Services() {
     return(
         <div className={styles.container}>
+          <section className={styles.titulo}>
+            <span><GoAlertFill /></span>
+            <h3>Passe o mouse ou toque na imagem do passeio desejado!</h3> 
+            </section>
         <h1 data-text="Nossos_Serviços...">Nossos_Serviços...</h1>
         <div className={styles.cardsContainer}>
           <section className={styles.card}>

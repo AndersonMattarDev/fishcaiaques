@@ -12,8 +12,24 @@
     height: 45rem;
     }
     
+    .titulo{
+      display: flex;
+      color: darkgrey;
+      font-family: Caveat;
+      font-size: 2rem;      
+      align-items: center;
+      justify-content: center;
+      grid-column: span 2; /* Ocupa as duas colunas do grid */
+      background-color: transparent; /* Ou a cor de fundo desejada */
+    }
 
-    /* Estilize as divs normais */
+    .titulo span{
+    margin-right: 10px;
+    font-size: 3rem;
+    color: red;
+    opacity: 0.8;
+    }
+
 .wrapper > div {
     display: flex;
     font-size: 35pt;
