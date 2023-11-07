@@ -1,0 +1,53 @@
+.container{    
+    margin: 5rem;
+    background-color: rgb(163, 73, 9);
+    opacity: 0.6;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 10px;    
+    border-top-right-radius: 25px;
+    border-top-left-radius: 10px;
+    box-shadow: 20px 20px 10px rgba(163, 73, 9, 0.644);
+}
+
+
+.container h1{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-family: Poppins;
+    font-size: 1.3rem;
+}
+
+.container h1 span{
+    font-family: Caveat;
+    color: blue;
+    font-size: 2rem;
+}
+
+
+.dep{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 28px;
+    margin: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+
+.figure{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.figure img{
+    width: 30px;
+    height: 30px;
+}
+
+.figure div a{
+    text-decoration: none;
+}
