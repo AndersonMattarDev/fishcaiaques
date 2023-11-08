@@ -52,7 +52,7 @@ export function Testimonials() {
                 <div><a href="https://www.google.com/maps/contrib/106480583636511213159/reviews/@-23.5638017,-46.4952456,9z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=pt-BR&entry=ttu">Google Maps Alves</a></div>
                 </figcaption>
                 </div>
-            </div>
+            </div> 
            
                 </section>
     )
