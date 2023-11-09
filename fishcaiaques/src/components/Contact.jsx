@@ -1,5 +1,5 @@
-import { LiaRocketchat, LiaEnvelopeOpenSolid, LiaInstagram, LiaWhatsapp } from "react-icons/lia";
-
+import { LiaRocketchat, LiaEnvelopeOpenSolid, LiaInstagram, LiaWhatsapp, LiaCopyrightSolid } from "react-icons/lia";
+import { VscTools } from "react-icons/vsc";
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
@@ -70,6 +70,13 @@ export function Contact() {
                     <input type="submit" value="Enviar" className={styles.btn} />
                 </form>
             </div>
+            
+            <footer className={styles.footer}>
+                <span><LiaCopyrightSolid /></span> 
+                <a href="https://alltechsolutions.netlify.app/">All Tech Solutions - <VscTools /> - Developed by Anderson Moreno Mattar</a>
+            </footer> 
+           
+            
         </section>
     )
 }

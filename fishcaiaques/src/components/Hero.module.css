@@ -31,3 +31,23 @@
     box-shadow: 10px 10px 10px rgba(215, 224, 224, 0.644);
     border-radius: 50%;
 }
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100vh;
+        height: 20rem;
+        border-radius: 15px 15px ;
+    }
+
+    .credito {
+        margin-top: 1rem;
+    }
+
+    .link {
+        margin: 1rem;
+    }
+
+    .image {
+        width: 5rem;
+    }
+}

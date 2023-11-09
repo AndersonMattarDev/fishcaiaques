@@ -94,12 +94,37 @@
     font-size: 14pt;
   }
 
+  @media screen and (max-width: 1000px) {
+    .wrapper {
+        grid-template-columns: 1fr; /* Agora uma única coluna */
+        width: 90vh;
+        align-content: center;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        margin-left: 1.8rem;
+    }
 
+    .titulo {
+        grid-column: span 1; /* Ocupa apenas uma coluna */
+    }
 
+    .wrapper > div {
+        margin: 1rem;
+        min-height: 8rem;
+    }
 
-     
-   
-   
+    .wrapper > div > .hoverText h1 {
+        font-size: 16pt;
+    }
+
+    .wrapper > div > .hoverText h2 {
+        font-size: 13pt;
+    }
+
+    .wrapper > div > .hoverText p {
+        font-size: 12pt;
+    }
+}
 
 
 

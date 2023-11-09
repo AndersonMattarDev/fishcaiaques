@@ -80,4 +80,68 @@
   display: none;
 }
 
+/* Adicionando media query para telas menores que 1000px */
+@media screen and (max-width: 1000px) {
+  .container {
+    min-width: 100vh;
+    margin-left: 10vh;
+    height: auto;
+  }
+
+  .container h1 {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 2rem;
+    
+   
+margin-bottom: 2rem;
+  }
+
+  .galleryWrapper {
+    min-width: 90vh;
+    max-height: none;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    position: absolute;
+    top: 9rem;
+    bottom: 0;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+    font-size: 20px;
+  }
+  .arrowRight {
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+  }
+  .arrowLeft {
+    left: 0;
+    right: auto;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+  }
+  .arrowLeft:hover,
+  .arrowRight:hover {
+    opacity: 1;
+  }
+
+  .currentItem {
+    width: 80vh; /* Ajuste conforme necessário */
+    max-width: 530px; /* Adicionando uma largura máxima para manter a nitidez */
+    margin: 0 auto; /* Centralizando horizontalmente */
+}
+}
+
 

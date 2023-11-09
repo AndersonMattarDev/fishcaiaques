@@ -132,4 +132,33 @@
   color: red;
   opacity: 0.5;
   }
- 
+
+  /* Adicionando media query para telas menores que 1000px */
+@media screen and (max-width: 1000px) {
+  .container {
+      grid-template-rows: auto auto; /* Alterando para duas linhas em telas menores */
+      align-items: center;
+      text-align: center;
+      min-width: 98vh;
+      margin-left: 1.7rem;
+  }
+
+  .cardsContainer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 100%;
+      max-width: 70vh; /* Adicionando largura máxima para os cards em telas menores */
+      margin-bottom: 20px;
+  }
+
+  .container h1 {
+      font-size: 5vh;
+  }
+
+  .textOverlay {
+    min-width: 63.3vh;
+  }
+}
