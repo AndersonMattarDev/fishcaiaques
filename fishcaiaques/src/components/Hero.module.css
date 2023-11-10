@@ -1,33 +1,48 @@
 .container{
-    background-image: url("../assets/caiaque-ia.jpg");
+    background-image: url("../assets/caiaque-ia.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 10px;
+    margin-left: 2rem;
     border-bottom-right-radius: 90px;
     border-top-left-radius: 80px;
     border-color: aqua;
-    box-shadow: 20px 20px 10px rgba(77, 85, 85, 0.644);
-    width: 98%;
-    height: 45rem;
+    box-shadow: 20px 20px 10px rgba(55, 59, 59, 0.644);
+    width: 84rem;
+    height: 40rem;
 }
 
-.credito{
-    margin-top: 26rem;
-    margin-left: 5px;
-    font-size: 8pt;
+.txt{
+    text-align: center;
     font-family: Skranji;
-    color: aliceblue;
+    font-size: 1.5rem;
+    color: rgb(207, 202, 202);
+    background-color: rgb(84, 78, 141);
+    width: 22rem;
+    border-color: rgb(109, 109, 110);
+    border-radius: 25px;
+    opacity:0.8;
+    margin-left: 2rem;
+    margin-top: 19rem;
 }
-.link{
-    margin: 5px;
-    font-size: 8pt;
-    font-family: Skranji;
-    color: aliceblue;
+
+.txt span{
+    font-family: Caveat;
+    font-size: 4rem;
+    color: blue;
+    opacity: 1;
 }
+
+.txt h1{
+    opacity: 1;
+}
+
+
 .image{
-    width: 15rem;
+    width: 10rem;
     margin: 1rem;
+    margin-left: 73rem;
     box-shadow: 10px 10px 10px rgba(215, 224, 224, 0.644);
     border-radius: 50%;
 }
@@ -49,5 +64,18 @@
 
     .image {
         width: 5rem;
+    }
+    .txt{
+        text-align: center;
+        font-family: Skranji;
+        font-size: 1.5rem;
+        color: rgb(207, 202, 202);
+        background-color: rgb(84, 78, 141);
+        width: 22rem;
+        border-color: rgb(109, 109, 110);
+        border-radius: 25px;
+        opacity: 0.8;
+        margin-left: 2rem;
+        margin-top: 4rem;
     }
 }

@@ -8,6 +8,7 @@
     box-shadow: 20px 20px 10px rgba(77, 85, 85, 0.644);
     gap: 20px; /* Espaçamento entre as células do grid */
     margin: 10rem;
+    margin-top: 5rem;
     width: 70rem;
     height: 45rem;
     }
