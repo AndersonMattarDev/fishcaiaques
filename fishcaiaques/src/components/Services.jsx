@@ -28,9 +28,9 @@ export function Services() {
               </p>
               <strong>Ficha Técnica</strong>
               <ul>
-                <li>Extensão: 2,2 km</li>
+                <li>Extensão: Variável</li>
                 <li>Grau de dificuldade: Médio</li>
-                <li>Duração estimada: 4h (ida e volta)</li>                
+                <li>Duração estimada: Variável</li>                
               </ul>
             </div>
           </section>
