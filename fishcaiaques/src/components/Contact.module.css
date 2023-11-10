@@ -63,14 +63,6 @@
     box-shadow: 10px 10px 10px rgb(168, 167, 167) ;
 }
 
-.btn:hover{
-    width: 100px;
-    height: 40px;
-    border-radius: 15px;
-    background-color: #6cb95d;
-    
-    box-shadow: 10px 10px 10px rgb(168, 167, 167) ;
-}
 
 .name {
     width: 100%;
@@ -206,7 +198,7 @@
     }
 
     .btn {
-        height: 40px;
+        
         border-radius: 15px;
         background-color: rgb(98, 96, 243);
         color: aliceblue;
@@ -234,4 +226,5 @@
         color: #000;
         margin-top: 9px; /* Adiciona um espaço entre os links */
     }
+
 }

@@ -67,7 +67,7 @@ export function Contact() {
                     <input type="email" name="email" className={styles.email} required />
                     <label>Mensagem:</label>
                     <textarea name="message" className={styles.txt} />
-                    <input type="submit" value="Enviar" className={styles.btn} />
+                    <input type="submit" value="Enviar" className={styles.btn} /> 
                 </form>
             </div>
             
